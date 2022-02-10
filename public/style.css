@@ -85,6 +85,8 @@ h1 {
   height: 100%;
   margin:0 auto;
   max-width: 600px;
+  color: white;
+  font-size: 20px;
 }
 
 #informationsection {
@@ -110,7 +112,11 @@ h1 {
 #aboutme li {
   text-align: left;
   font-size: 20px;
-  padding: 3px;
+  padding: 7px;
+}
+
+#aboutme li > * {
+  display: inline;
 }
 
 #projectlist {
@@ -152,4 +158,20 @@ h1 {
 
 #backbutton:hover { 
   cursor: pointer;
+}
+
+a {
+  color: white;
+}
+
+#githublink {
+  margin: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul > ul  {
+  list-style: disc;
 }
