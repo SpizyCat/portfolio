@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
+
 * {
   text-transform: lowercase;
 }
@@ -19,21 +20,12 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
@@ -44,41 +36,26 @@ h1 {
 }
 
 #downscroll {
-  -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: end;
   width: 50px;
   height: 30px;
   margin: 30px;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-  -webkit-transition: -webkit-transform 150ms;
-  transition: -webkit-transform 150ms;
+  filter: invert(100%);
   transition: transform 150ms;
-  transition: transform 150ms, -webkit-transform 150ms;
-  -webkit-transition: opacity 250ms;
   transition: opacity 250ms;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
-
 #topscroll {
   width: 50px;
   height: 30px;
   margin: 30px;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  filter: invert(100%);
+  transform: rotate(180deg);
   opacity: 1;
-  -webkit-transition: -webkit-transform 150ms;
-  transition: -webkit-transform 150ms;
   transition: transform 150ms;
-  transition: transform 150ms, -webkit-transform 150ms;
-  -webkit-transition: opacity 250ms;
   transition: opacity 250ms;
   opacity: 0;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
   float: right;
   right: 0;
   bottom: 0;
@@ -86,55 +63,46 @@ h1 {
 }
 
 #downscroll:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  transform: scale(1.4);
   cursor: pointer;
 }
 
 .narrow {
   color: white;
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
+  margin:0 auto;
   max-width: 1200px;
 }
 
 .narrow2 {
   color: white;
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
+  margin:0 auto;
   max-width: 600px;
   color: white;
   font-size: 20px;
 }
 
 #informationsection {
-  display: -ms-grid;
   display: grid;
-      grid-template-areas: "left right";
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  grid-template-columns: 1fr 1fr;
 }
 
 #aboutme {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: left;
   color: white;
   font-size: 20px;
   width: 100%;
   height: 100%;
 }
-
+ 
 #aboutme p {
   text-align: left;
   padding: 5px;
@@ -152,15 +120,13 @@ h1 {
 }
 
 #projectlist {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: right;
   color: white;
   font-size: 20px;
   width: 100%;
   height: 100%;
 }
-
+ 
 #projectlist p {
   text-align: center;
   font-size: 20px;
@@ -182,17 +148,15 @@ h1 {
   width: 50px;
   height: 30px;
   margin: 30px;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  filter: invert(100%);
+  transform: rotate(90deg);
   float: left;
   left: 0;
   bottom: 0;
   position: fixed;
 }
 
-#backbutton:hover {
+#backbutton:hover { 
   cursor: pointer;
 }
 
@@ -208,7 +172,6 @@ ul {
   list-style: none;
 }
 
-ul > ul {
+ul > ul  {
   list-style: disc;
 }
-/*# sourceMappingURL=style.css.map */
